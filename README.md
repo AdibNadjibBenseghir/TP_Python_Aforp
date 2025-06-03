@@ -18,4 +18,5 @@ Le mot est choisi au hasard dans un fichier texte.
 Réalisation d’un petit TP Regex pour vérifier si une adresse e-mail est correcte (vérification de base via expression régulière).
 
 **Bibliotheque requise :** `re` (`import re` en haut du code)
+
 **Fichier requis :** `ips.txt` (une @ ip par ligne)

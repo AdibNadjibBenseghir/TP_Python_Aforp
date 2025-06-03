@@ -60,7 +60,7 @@ def main():
                 print("Maximum des essaies ATTEIN")
 
     if not trouve:
-        print(f"💥 Mot de passe non trouvé. C'était : {mot_a_deviner}")
+        print(f"Mot de passe non trouvé. C'était : {mot_a_deviner}")
 
     # 5. Afficher l’historique
     print("Historique des tentatives :")
