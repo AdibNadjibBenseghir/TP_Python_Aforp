@@ -18,7 +18,7 @@ Le mot est choisi au hasard dans un fichier texte.
 
 ## Tp 2 IPcheckRE.py
 
-Réalisation d’un petit TP Regex pour vérifier si une adresse e-mail est correcte (vérification de base via expression régulière).
+Réalisation d’un petit TP Regex pour vérifier si une adresse IP est correcte (vérification de base via expression régulière).
 
 **Bibliotheque requise :** `re` (`import re` en haut du code)
 
