@@ -66,9 +66,54 @@ Fonction:
 - Export des résultats au format `.txt` ou `.csv` (`--output`)
 - Vérification de validité d'adresse IP
 
-## ▶️ Exemple d’utilisation
+##  Exemple d’utilisation
 
 ```bash
 python PortScan.py --ip 192.168.1.1 --start-port 20 --end-port 100 --verbose --output resultat.csv
 
+```
 ---
+
+## TP5 (Bonus)  Apache Logs – Analyse d’erreurs 404 404ErrorDetecter
+
+Ce TP analyse un fichier `apache.log`  pour :
+
+- Extraire les requêtes en erreur 404
+- Identifier les IPs responsables
+- Détecter les bots (Googlebot, spider, etc.)
+- Générer un graphique des IPs les plus fautives
+
+### Dépendances
+
+```bash
+pip install pandas matplotlib
+```
+
+### Utilisation
+
+Génère un fichier de logs :
+
+```bash
+python generer_apache_log.py
+```
+Lance l’analyse :
+
+```bash
+python 404ErrorDetecter.py apache.log
+```
+
+### Discusion
+
+L’analyse montre que certaines adresses IP génèrent un nombre élevé d’erreurs 404. Ces requêtes proviennent souvent de bots ou de scanners automatisés (Googlebot, spiderbot, curl, etc.). Cela peut indiquer :
+
+- Des tentatives de scrapping ou de découverte de failles
+- Des configurations erronées de clients
+- Des scans réguliers de moteurs de recherche
+
+Quand plus de 50 % des erreurs 404 proviennent de bots, il est judicieux d’envisager des contre-mesures :
+
+- Bloquer ces IPs via un pare-feu (`iptables`, `fail2ban`, etc.)
+- Filtrer les user-agents dans le serveur Apache (`.htaccess`)
+- Mettre en place une surveillance automatisée (tâche cron ou script Python périodique)
+
+Automatiser cette analyse permet de détecter rapidement les comportements anormaux et de renforcer la sécurité du serveur.
