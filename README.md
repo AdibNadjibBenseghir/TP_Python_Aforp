@@ -52,7 +52,7 @@ Il identifie les IPs les plus suspectes et affiche un graphique comparatif.
 
 Remarque:
 
-Assure-toi d’avoir installé matplotlib :
+Assurez-vous d’avoir installé matplotlib :
 pip install matplotlib
 
 ---
