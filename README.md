@@ -1,7 +1,7 @@
 # TPs Python – Aforp - BENSEGHIR Nadjib M2 IRS P37
 Tps Python pour le cours de Python a l'Aforp pour la semaine du 02/06/2025 - 06/06/2025
 
-## Tp 1 Crackme.py
+## Tp 1 jeu Crackme.py
 Petit jeu en Python pour deviner un mot de passe faible.  
 Le mot est choisi au hasard dans un fichier texte.
 **Fonctions :**
@@ -17,7 +17,7 @@ Le mot est choisi au hasard dans un fichier texte.
 
 ---
 
-## Tp 2 IPcheckRE.py
+## Tp 2 - TP Regex IPcheckRE.py
 
 Réalisation d’un petit TP Regex pour vérifier si une adresse IP est correcte (vérification de base via expression régulière).
 
@@ -54,5 +54,21 @@ Remarque:
 
 Assure-toi d’avoir installé matplotlib :
 pip install matplotlib
+
+---
+
+## TP4 Scanner de ports TCP PortScan.py
+Fonction:
+- Scan d'une plage de ports (ex: 20 à 1000)
+- Scanner multithreadé (par défaut 50 threads)
+- Timeout configurable
+- Affichage optionnel des ports fermés (`--verbose`)
+- Export des résultats au format `.txt` ou `.csv` (`--output`)
+- Vérification de validité d'adresse IP
+
+## ▶️ Exemple d’utilisation
+
+```bash
+python tp4_scanner.py --ip 192.168.1.1 --start-port 20 --end-port 100 --verbose --output resultat.csv
 
 ---
