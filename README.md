@@ -74,7 +74,7 @@ python PortScan.py --ip 192.168.1.1 --start-port 20 --end-port 100 --verbose --o
 ```
 ---
 
-## TP5 (Bonus)  Apache Logs – Analyse d’erreurs 404 404ErrorDetecter
+## TP5 (Bonus)  Apache Logs – Analyse d’erreurs 404 (404ErrorDetecter.py)
 
 Ce TP analyse un fichier `apache.log`  pour :
 
