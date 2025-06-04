@@ -69,6 +69,6 @@ Fonction:
 ## ▶️ Exemple d’utilisation
 
 ```bash
-python tp4_scanner.py --ip 192.168.1.1 --start-port 20 --end-port 100 --verbose --output resultat.csv
+python PortScan.py --ip 192.168.1.1 --start-port 20 --end-port 100 --verbose --output resultat.csv
 
 ---
