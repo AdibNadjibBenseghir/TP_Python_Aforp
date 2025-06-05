@@ -74,7 +74,7 @@ python PortScan.py --ip 192.168.1.1 --start-port 20 --end-port 100 --verbose --o
 ```
 ---
 
-## TP5 (Bonus)  Apache Logs – Analyse d’erreurs 404 (404ErrorDetecter.py)
+## TP5 Apache Logs – Analyse d’erreurs 404 (404ErrorDetecter.py)
 
 Ce TP analyse un fichier `apache.log`  pour :
 
@@ -117,3 +117,23 @@ Quand plus de 50 % des erreurs 404 proviennent de bots, il est judicieux d’env
 - Mettre en place une surveillance automatisée (tâche cron ou script Python périodique)
 
 Automatiser cette analyse permet de détecter rapidement les comportements anormaux et de renforcer la sécurité du serveur.
+
+
+## TP6 System Monitor - Psutil
+
+Surveillez en temps réel l’état de votre système : CPU, mémoire, disque, réseau — avec affichage ASCII dans le terminal, export CSV, graphiques et rapport HTML.
+
+### Fonctionnalités
+
+- Utilisation CPU (par cœur + total) avec barres ASCII
+- RAM, disque, réseau (global & par interface)
+- Affichage terminal clair toutes les X secondes
+- Export `.csv` des métriques
+- Graphiques via `matplotlib`
+- Rapport HTML complet + snapshot système textuel intégré
+
+### Dépendances
+
+```bash
+pip install psutil matplotlib pandas
+```
